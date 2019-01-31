@@ -1,0 +1,43 @@
+.SearchContainer {
+   width: 300px
+}
+
+.SearchInput {
+   width: 100%;
+   font-size: 1em;
+   font-family: 'Nunito';
+   border-radius: 20px;
+   border: 0;
+   padding: 5px 10px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.SearchInputCollapse {
+   width: 100%;
+   font-size: 1em;
+   font-family: 'Nunito';
+   border-radius: 20px;
+   border: 0;
+   padding: 5px 10px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.SearchInput:focus {
+   outline: none;
+}
+
+.SearchInputCollapse:focus {
+   outline: none;
+}
+
+.MuiRadio-colorPrimary-16.MuiRadio-checked-14 {
+   color: white !important;
+}
+
+.MuiRadio-root-13 {
+   color: #212121 !important;
+}
+
+.MuiTypography-body1-49 {
+   color: #212121 !important;
+}

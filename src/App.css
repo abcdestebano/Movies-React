@@ -1,32 +1,60 @@
 .App {
-  text-align: center;
+   position: relative;
+   height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.borderyellow {
+   border: 1px solid yellow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ContentHeader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.ContentHeaderCollapse {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* height: 90%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ContainerPagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.PaginationResults {
+   display: inline-block;
+   padding-left: 0;
+   margin: 20px 0;
+   border-radius: 4px;
+}
+
+.PaginationResults>li {
+   display: inline;
+}
+
+.PaginationResults>.active>a, .PaginationResults>.active>a:focus, .PaginationResults>.active>a:hover, .PaginationResults>.active>span, .PaginationResults>.active>span:focus, .PaginationResults>.active>span:hover {
+   z-index: 3;
+   color: #fff;
+   cursor: default;
+   background-color: #42a5f5;
+   border-color: #42a5f5;
+}
+
+.PaginationResults>li>a, .PaginationResults>li>span {
+   position: relative;
+   float: left;
+   padding: 6px 12px;
+   margin-left: -1px;
+   line-height: 1.42857143;
+   color: #42a5f5;
+   text-decoration: none;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   cursor: pointer;
 }

@@ -1,0 +1,16 @@
+.GridResults {
+   padding: 2%;
+}
+
+.Title {
+   margin: 0;
+}
+
+.GridResultContainer {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 250px);
+   justify-items: center;
+   margin-top: 20px;
+   justify-content: center;
+   grid-gap: 15px;
+}

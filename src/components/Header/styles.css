@@ -1,0 +1,76 @@
+.Header {
+   background: #42a5f5;
+   box-sizing: border-box;
+   position: relative;
+   padding: 2% 2%;
+}
+
+.HeaderContainer {
+   height: 100%;
+}
+
+.HeaderTitle {
+   color: white;
+   font-size: 2em;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+.HeaderContainerCollapse {
+   animation: collapse 1s forwards;
+}
+
+.HeaderSearch {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+
+.HeaderSearchCollapse {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 20px 30px;
+}
+
+@keyframes collapse {
+   from {
+      height: 100%
+   }
+   to {
+      height: 15%
+   }
+}
+
+@keyframes collapseSmall {
+   from {
+      height: 15%
+   }
+   to {
+      height: 20%
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .HeaderContainerCollapse {
+      display: flex;
+      flex-direction: column;
+   }
+   .HeaderSearchCollapse {
+      position: relative;
+      margin-top: 15px;
+      justify-content: center;
+   }
+   .HeaderTitle {
+      font-size: 1em;
+      text-align: center;
+   }
+}

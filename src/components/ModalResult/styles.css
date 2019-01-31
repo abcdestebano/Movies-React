@@ -1,0 +1,104 @@
+.ModalContainer {
+   display: flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.ModalContainer:focus {
+   outline: none;
+}
+
+.ModalPaper {
+   display: flex;
+   width: 60%;
+   padding: 2%;
+}
+
+.ModalImage {
+   width: 400px;
+}
+
+.ModalInfo {
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.ModalTitle {
+   font-size: 2em;
+   font-weight: bold;
+}
+
+.ModalYear {
+   margin: 5px 0;
+   font-size: 0.8em;
+}
+
+.ModalActors {
+   font-size: 0.8em;
+}
+
+.ModalDescription {}
+
+.ModalButton {
+   background-color: #f44336 !important;
+   color: white !important;
+   margin-top: 100px !important;
+   align-self: flex-end;
+   width: 30%;
+}
+
+.ModalBadges {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.ModalBadge {
+   background-color: #DDDDDD;
+   padding: 0 5px;
+   border-radius: 15px;
+   font-size: 0.8em;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+   margin-top: 5px;
+}
+
+.ModalStars {
+   color: #FFBF00;
+}
+
+.ModalStarsBorder {
+   color: #FFBF00;
+}
+
+.ModalStarsContainer {
+   display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+   .ModalPaper {
+      flex-direction: column;
+      align-items: center;
+   }
+   .ModalImage {
+      width: 18vh !important;
+   }
+   .ModalButton {
+      margin-top: 20px !important;
+   }
+   .ModalDescription {
+      font-size: 0.8em;
+   }
+   .ModalInfo {
+      margin-top: 10px;
+   }
+   .ModalYear, .ModalBadge, .ModalActors {
+      font-size: 0.7em
+   }
+   .ModalStars, .ModalStarsBorder, .ModalTitle {
+      font-size: 1em !important;
+   }
+}
